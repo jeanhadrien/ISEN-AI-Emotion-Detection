@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>jeanhadri.en - Emotion Detection</title>
+        <!-- Bootstrap core CSS -->
+        <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+        <!-- Custom styles for this template -->
+        <link href="cover.css" rel="stylesheet">
+    </head>
+    <script>
+        function onSubmit(){
+            document.getElementById("form").style.display = "None";
+            document.getElementById("loading").visibility = "visible";
+        }
+    </script>
+    <body>
+        <div class="site-wrapper">
+            <div class="site-wrapper-inner">
+                <div class="cover-container">
+                    <div class="masthead clearfix">
+                        <div class="inner">
+                            <h3 class="masthead-brand">Emotion Detection</h3>
+                            <nav class="nav nav-masthead">
+                                <a class="nav-link active" href="#">App</a>
+                                <a class="nav-link" href="dataset.html">Dataset</a>
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="inner cover">
+                        <div id="form" class="visible">
+                            <h1 class="cover-heading">Upload your image.</h1>
+                            <p class="lead">Preferably small and cropped around faces.</p>
+                            <form method="post" enctype="multipart/form-data" onsubmit="onSubmit()" role="form"> 
+                                <div class="form-group"> 
+                                    <input type="file" name="image" id="exampleInputFile"> 
+                                </div>                                 
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </form>
+                        </div>
+                        <div id="loading" class="invisible">
+                            <div class="spinner-border" role="status"> 
+                                <span class="sr-only">Loading...</span> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mastfoot">
+                        <div class="inner">
+                            <small>v1.2</small>
+                            <p> Made using <a href="https://pinegrow.com/">Pinegrow</a>.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Bootstrap core JavaScript
+    ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/popper.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+    </body>
+</html>

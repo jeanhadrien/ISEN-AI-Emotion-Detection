@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>jeanhadri.en - Emotion Detection</title>
+        <!-- Bootstrap core CSS -->
+        <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+        <!-- Custom styles for this template -->
+        <link href="cover.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="site-wrapper">
+            <div class="site-wrapper-inner">
+                <div class="cover-container">
+                    <div class="masthead clearfix">
+                        <div class="inner">
+                            <h3 class="masthead-brand">Emotion Detection</h3>
+                            <nav class="nav nav-masthead">
+                                <a class="nav-link active" href="#">App</a>
+                                <a class="nav-link" href="dataset.html">Dataset</a>
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="cover inner mb-5 mb-lg-5 mb-xl-5 mr-auto mt-5 mt-lg-5 mt-xl-5 pb-5 pb-lg-5 pb-xl-5 pr-auto pt-5 pt-lg-5 pt-xl-5 shadow-none">
+                        <div id="results">
+                            <img src="{{imagePath}}" style="max-width:500px" class="mb-5 mb-lg-5 mb-xl-5 pb-xl-auto">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md">
+                                        <h1>😠</h1>
+                                        <h5 id="percent_angry">{{percent_angry}}%</h5>
+                                    </div>
+                                    <div class="col-md">
+                                        <h1>🤢</h1>
+                                        <h5 id="percent_disgust">{{percent_disgust}}%</h5>
+                                    </div>
+                                    <div class="col-md">
+                                        <h1>😃</h1>
+                                        <h5 id="percent_happy">{{percent_happy}}%</h5>
+                                    </div>
+                                    <div class="col-md">
+                                        <h1>😰</h1>
+                                        <h5 id="percent_fear">{{percent_fear}}%</h5>
+                                    </div>
+                                    <div class="col-md">
+                                        <h1>&#128528;</h1>
+                                        <h5 id="percent_neutral">{{percent_neutral}}%</h5>
+                                    </div>
+                                    <div class="col-md">
+                                        <h1>😢</h1>
+                                        <h5 id="percent_sad">{{percent_sad}}%</h5>
+                                    </div>
+                                    <div class="col-md">
+                                        <h1>😮</h1>
+                                        <h5 id="percent_surprise">{{percent_surprise}}%</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mastfoot">
+                        <div class="inner">
+                            <small>v1.2</small>
+                            <p> Made using <a href="https://pinegrow.com/">Pinegrow</a>.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Bootstrap core JavaScript
+    ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/popper.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+    </body>
+</html>
